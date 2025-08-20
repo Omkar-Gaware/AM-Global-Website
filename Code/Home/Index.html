@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AM Global - Your Trusted Technology Partner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../Home/Index.html"><img src="../images/AM Global Logo copy.png" alt="AM Global Logo"></a>
+
+            </div>
+            <ul class="nav-links">
+                <li><a href="../Products/Index.html">Products</a></li>
+                <li><a href="../Ai/Index.html">AI</a></li>
+                <li><a href="../Automation/Index.html">Automation</a></li>
+                <li><a href="../Hardware/Index.html">Hardware</a></li>
+                <li><a href="../About/Index.html">About Us</a></li>
+                <li><a href="../Contact/Index.html">Contact Us</a></li>
+            </ul>
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <span id="theme-icon">🌙</span>
+                <span id="theme-text">Dark</span>
+            </button>
+            <button class="mobile-menu" onclick="toggleMobileMenu()">☰</button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <div class="logo">
+                    <div class="logo-icon"><a href="../Home/Index.html"><img src="../images/AM Global Logo copy.png"
+                                alt="AM Global Logo"></a></div>
+                    <!-- AM Global -->
+                </div>
+                <button class="mobile-menu-close" onclick="closeMobileMenu()">✕</button>
+            </div>
+            <ul class="mobile-nav-links">
+                <li><a href="../Products/Index.html" onclick="closeMobileMenu()">Products</a></li>
+                <li><a href="../Ai/Index.html" onclick="closeMobileMenu()">AI</a></li>
+                <li><a href="../Automation/Index.html" onclick="closeMobileMenu()">Automation</a></li>
+                <li><a href="../Hardware/Index.html" onclick="closeMobileMenu()">Hardware</a></li>
+                <li><a href="../About/Index.html" onclick="closeMobileMenu()">About Us</a></li>
+                <li><a href="../Contact/Index.html" onclick="closeMobileMenu()">Contact Us</a></li>
+            </ul>
+            <button class="theme-toggle" onclick="toggleTheme()" style="margin-top: 2rem;">
+                <span id="mobile-theme-icon">🌙</span>
+                <span id="mobile-theme-text">Dark</span>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- HTML Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-image loading">
+                <div class="tech-illustration">
+                    <video autoplay muted loop playsinline>
+                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                            type="video/mp4">
+                        <!-- Fallback for browsers that don't support video -->
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="products-content">
+            <h2 class="section-title loading">AM Global Products</h2>
+            <div class="products-grid">
+                <div class="product-card loading">
+                    <div class="product-image">
+                        <div class="product-placeholder">E</div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Edublox</h3>
+                        <p>Innovative educational platform designed to enhance learning experiences with cutting-edge
+                            technology and interactive content.</p>
+                    </div>
+                </div>
+
+                <div class="product-card loading">
+                    <div class="product-image">
+                        <div class="product-placeholder">B</div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Blockcluster</h3>
+                        <p>Advanced blockchain solutions for enterprise-level applications with secure and scalable
+                            infrastructure for modern businesses.</p>
+                    </div>
+                </div>
+
+                <div class="product-card loading">
+                    <div class="product-image">
+                        <div class="product-placeholder">W</div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Walletblox</h3>
+                        <p>Next-generation digital wallet solution with enhanced security features and seamless user
+                            experience for all transactions.</p>
+                    </div>
+                </div>
+
+                <div class="product-card loading">
+                    <div class="product-image">
+                        <div class="product-placeholder">N</div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Nimbus</h3>
+                        <p>Comprehensive cloud-based platform offering business automation solutions and advanced data
+                            management capabilities.</p>
+                    </div>
+                </div>
+
+                <div class="product-card loading">
+                    <div class="product-image">
+                        <div class="product-placeholder">F</div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Finblox</h3>
+                        <p>Revolutionary fintech platform providing innovative financial services and comprehensive
+                            payment processing solutions.</p>
+                    </div>
+                </div>
+
+                <div class="product-card loading">
+                    <div class="product-image">
+                        <div class="product-placeholder">S</div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Soundblox</h3>
+                        <p>Advanced audio processing and streaming platform with high-quality sound technology
+                            integration and real-time capabilities.</p>
+                    </div>
+                </div>
+
+                <div class="product-card loading">
+                    <div class="product-image">
+                        <div class="product-placeholder">C</div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Cloudops</h3>
+                        <p>Streamlined cloud operations management platform providing automated deployment and
+                            monitoring solutions for enterprise infrastructure.</p>
+                    </div>
+                </div>
+
+                <div class="product-card loading">
+                    <div class="product-image">
+                        <div class="product-placeholder">D</div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Datavault</h3>
+                        <p>Secure data storage and management solution with advanced encryption and backup capabilities
+                            for critical business information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <!-- Logo and Description Section -->
+        <div class="footer-section">
+            <div class="logo">
+                <img src="../images/AM Global Logo copy.png" alt="AM Global Logo">
+            </div>
+            <!-- <p class="footer-description">
+                A leading development & consultancy agency having experience of delivering more than 90 emerging
+                technology enabled software projects. We innovate to raise the standards.
+            </p> -->
+        </div>
+
+        <!-- About Us Section -->
+        <div class="footer-section">
+            <h3>Quick links</h3>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#ai">AI Solutions</a></li>
+                    <li><a href="#automation">Automation</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Contact Us Section -->
+        <div class="footer-section">
+            <h3>Contact us</h3>
+            <!-- <div class="contact-info">
+                Your trusted technology partner for innovative solutions and emerging technology projects.
+            </div> -->
+            <div class="phone">+91 9423588397</div>
+            <div class="phone">tushar_sir_09@gmail.com</div>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="footer-section">
+            <h3>Stay in the loop</h3>
+            <p class="newsletter-description">
+                Subscribe to receive the latest news and updates about AM Global. We promise not to spam you!
+            </p>
+            <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+                <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+                <button type="submit" class="newsletter-btn">Continue</button>
+            </form>
+        </div>
+
+        <div class="footer-bottom">
+            © 2023 AM Global. All rights reserved.
+        </div>
+    </div>
+
+    <script src="app.js">
+
+    </script>
+</body>
+
+</html>
