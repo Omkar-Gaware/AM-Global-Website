@@ -1,4 +1,6 @@
-// Theme Toggle Functionality
+let currentTheme = 'light';
+
+        // Theme Toggle Functionality
         function toggleTheme() {
             const body = document.body;
             const themeIcon = document.getElementById('theme-icon');
@@ -9,110 +11,83 @@
             body.classList.toggle('dark-theme');
             
             if (body.classList.contains('dark-theme')) {
-                themeIcon.textContent = '☀️';
-                themeText.textContent = 'Light';
-                mobileThemeIcon.textContent = '☀️';
-                mobileThemeText.textContent = 'Light';
-                localStorage.setItem('theme', 'dark');
+                if (themeIcon) themeIcon.textContent = '☀️';
+                if (themeText) themeText.textContent = 'Light';
+                if (mobileThemeIcon) mobileThemeIcon.textContent = '☀️';
+                if (mobileThemeText) mobileThemeText.textContent = 'Light';
+                currentTheme = 'dark';
             } else {
-                themeIcon.textContent = '🌙';
-                themeText.textContent = 'Dark';
-                mobileThemeIcon.textContent = '🌙';
-                mobileThemeText.textContent = 'Dark';
-                localStorage.setItem('theme', 'light');
-            }
-        }
-
-        // Load saved theme
-        function loadTheme() {
-            const savedTheme = localStorage.getItem('theme');
-            const body = document.body;
-            const themeIcon = document.getElementById('theme-icon');
-            const themeText = document.getElementById('theme-text');
-            const mobileThemeIcon = document.getElementById('mobile-theme-icon');
-            const mobileThemeText = document.getElementById('mobile-theme-text');
-            
-            if (savedTheme === 'dark') {
-                body.classList.add('dark-theme');
-                themeIcon.textContent = '☀️';
-                themeText.textContent = 'Light';
-                if (mobileThemeIcon && mobileThemeText) {
-                    mobileThemeIcon.textContent = '☀️';
-                    mobileThemeText.textContent = 'Light';
-                }
+                if (themeIcon) themeIcon.textContent = '🌙';
+                if (themeText) themeText.textContent = 'Dark';
+                if (mobileThemeIcon) mobileThemeIcon.textContent = '🌙';
+                if (mobileThemeText) mobileThemeText.textContent = 'Dark';
+                currentTheme = 'light';
             }
         }
 
         // Mobile Menu Toggle Functions
         function toggleMobileMenu() {
             const overlay = document.getElementById('mobileMenuOverlay');
-            overlay.classList.add('active');
-            document.body.style.overflow = 'hidden';
+            if (overlay) {
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
         }
 
         function closeMobileMenu() {
             const overlay = document.getElementById('mobileMenuOverlay');
-            overlay.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-
-        // Close mobile menu when clicking overlay
-        document.getElementById('mobileMenuOverlay').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeMobileMenu();
+            if (overlay) {
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
             }
-        });
-
-        // Newsletter form handler
-        function handleNewsletterSubmit(event) {
-            event.preventDefault();
-            const email = event.target.querySelector('input').value;
-            alert(`Thank you for subscribing with email: ${email}`);
-            event.target.reset();
         }
 
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Loading animations on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.animationDelay = '0.1s';
-                    entry.target.classList.add('loading');
-                }
-            });
-        }, observerOptions);
+        // Contact button handler
+        function handleContactClick() {
+            // Smooth scroll to top or open contact form
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+            // You can replace this with actual contact form logic
+            setTimeout(() => {
+                alert('Contact form would open here! Email: tushar_sir_09@gmail.com');
+            }, 500);
+        }
 
         // Initialize on page load
         document.addEventListener('DOMContentLoaded', () => {
-            loadTheme();
-            
-            document.querySelectorAll('.product-card').forEach((card, index) => {
-                card.style.animationDelay = `${index * 0.1}s`;
-                observer.observe(card);
+            // Initialize loading animations
+            const elements = document.querySelectorAll('.loading');
+            elements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.animationDelay = `${index * 0.1}s`;
+                }, index * 100);
             });
+
+            // Add mobile menu overlay click handler
+            const overlay = document.getElementById('mobileMenuOverlay');
+            if (overlay) {
+                overlay.addEventListener('click', function(e) {
+                    if (e.target === this) {
+                        closeMobileMenu();
+                    }
+                });
+            }
         });
 
         // Close mobile menu on escape key
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') {
                 closeMobileMenu();
+            }
+        });
+
+        // Add parallax effect on scroll
+        window.addEventListener('scroll', function() {
+            const footer = document.querySelector('.footer');
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * -0.1;
+            
+            if (footer && footer.getBoundingClientRect().top < window.innerHeight) {
+                footer.style.transform = `translateY(${rate}px)`;
             }
         });
