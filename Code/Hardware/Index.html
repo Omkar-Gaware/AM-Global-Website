@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AM Global - Your Trusted Technology Partner</title>
+    <title>Products - AM Global | Your Trusted Technology Partner</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,16 +15,18 @@
                 <a href="../Home/index.html"><img src="../images/AM Global Logo copy.png" alt="AM Global Logo"></a>
             </div>
             <ul class="nav-links">
-                <li><a href="../Products/Index.html">Products</a></li>
+                <!-- <li><a href="../Products/Index.html">Products</a></li> -->
                 <li><a href="../Ai/Index.html">AI</a></li>
                 <li><a href="../Automation/Index.html">Automation</a></li>
                 <li><a href="../Hardware/Index.html">Hardware</a></li>
                 <li><a href="../About/Index.html">About Us</a></li>
                 <li><a href="../Contact/Index.html">Contact Us</a></li>
             </ul>
-            <button class="theme-toggle" onclick="toggleTheme()">
-                <span id="theme-icon">🌙</span>
-                <span id="theme-text">Dark</span>
+            <button class="contact-nav-btn">
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfoK6vgeDLR1E3rNieQdl8b1TOaQg3b1KxLlOs0zJr1URg1hQ/viewform?usp=dialog">
+                    Enquiry Form
+                </a>
             </button>
             <button class="mobile-menu" onclick="toggleMobileMenu()">☰</button>
         </nav>
@@ -35,28 +37,301 @@
         <div class="mobile-menu-content">
             <div class="mobile-menu-header">
                 <div class="logo">
-                    <div class="logo-icon"> <a href="../Home/index.html"><img src="../images/AM Global Logo copy.png"
-                                alt="AM Global Logo"></a>
-                    </div>
-                    
+                    <svg width="30" height="30" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="currentColor" opacity="0.1" />
+                        <text x="50" y="65" text-anchor="middle" font-size="40" font-weight="bold"
+                            fill="currentColor">AM</text>
+                    </svg>
+                    AM Global
                 </div>
                 <button class="mobile-menu-close" onclick="closeMobileMenu()">✕</button>
             </div>
             <ul class="mobile-nav-links">
-                <li><a href="../Products/Index.html" onclick="closeMobileMenu()">Products</a></li>
+                <!-- <li><a href="../Products/Index.html" onclick="closeMobileMenu()">Products</a></li> -->
                 <li><a href="../Ai/Index.html" onclick="closeMobileMenu()">AI</a></li>
                 <li><a href="../Automation/Index.html" onclick="closeMobileMenu()">Automation</a></li>
                 <li><a href="../Hardware/Index.html" onclick="closeMobileMenu()">Hardware</a></li>
                 <li><a href="../About/Index.html" onclick="closeMobileMenu()">About Us</a></li>
                 <li><a href="../Contact/Index.html" onclick="closeMobileMenu()">Contact Us</a></li>
             </ul>
-            <button class="theme-toggle" onclick="toggleTheme()" style="margin-top: 2rem;">
-                <span id="mobile-theme-icon">🌙</span>
-                <span id="mobile-theme-text">Dark</span>
+            <button class="theme-toggle" onclick="">
+                <span><span><a
+                            style="text-decoration: none; font-size: larger; font-weight: 600; color: rgb(48, 90, 90);"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSfoK6vgeDLR1E3rNieQdl8b1TOaQg3b1KxLlOs0zJr1URg1hQ/viewform?usp=dialog">Contact
+                            US</a></span></span>
             </button>
         </div>
     </div>
 
+
+    <!-- About Section -->
+    <div class="container">
+        <div class="header">
+            <h1>🔗 Hardware Network Solutions</h1>
+            <p>Professional networking equipment and surveillance systems</p>
+        </div>
+
+        <!-- Network Switches Section -->
+        <div class="category">
+            <div class="category-header">
+                <h2>🔄 Network Switches</h2>
+            </div>
+            <div class="category-content">
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image switch-image">
+                            <span class="icon">🔌</span>
+                            <div class="feature-badge">8-Port</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>8-Port Gigabit Switch</h3>
+                            <p>Compact desktop switch for small offices with plug-and-play setup.</p>
+                            <div class="specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Ports:</span>
+                                    <span>8x Gigabit</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Power:</span>
+                                    <span>External</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image switch-image">
+                            <span class="icon">🖥️</span>
+                            <div class="feature-badge">24-Port</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>24-Port Managed Switch</h3>
+                            <p>Enterprise managed switch with advanced network features.</p>
+                            <div class="specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Ports:</span>
+                                    <span>24x Gigabit</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Mount:</span>
+                                    <span>Rack 1U</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Routers Section -->
+        <div class="category">
+            <div class="category-header">
+                <h2>📡 Routers</h2>
+            </div>
+            <div class="category-content">
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image router-image">
+                            <span class="icon">📶</span>
+                            <div class="feature-badge">WiFi 6</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Enterprise WiFi Router</h3>
+                            <p>High-performance dual-band router with mesh capability.</p>
+                            <div class="specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Speed:</span>
+                                    <span>AX3000</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Range:</span>
+                                    <span>3000 sq ft</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image router-image">
+                            <span class="icon">🌐</span>
+                            <div class="feature-badge">VPN</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Business VPN Router</h3>
+                            <p>Secure business router with built-in VPN server and firewall.</p>
+                            <div class="specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">VPN:</span>
+                                    <span>50 tunnels</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">WAN:</span>
+                                    <span>Dual WAN</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cameras Section -->
+        <div class="category">
+            <div class="category-header">
+                <h2>📹 Security Cameras</h2>
+            </div>
+            <div class="category-content">
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image camera-image">
+                            <span class="icon">🔫</span>
+                            <div class="feature-badge">4K</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Bullet Camera</h3>
+                            <p>Weather-resistant bullet camera with infrared night vision.</p>
+                            <div class="specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Resolution:</span>
+                                    <span>4K Ultra HD</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Night Vision:</span>
+                                    <span>100ft</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image camera-image">
+                            <span class="icon">🎯</span>
+                            <div class="feature-badge">360°</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Dome Camera</h3>
+                            <p>Vandal-resistant dome camera with pan-tilt-zoom functionality.</p>
+                            <div class="specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Coverage:</span>
+                                    <span>360° rotation</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Zoom:</span>
+                                    <span>12x optical</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image camera-image">
+                            <span class="icon">📶</span>
+                            <div class="feature-badge">WiFi</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>WiFi Camera</h3>
+                            <p>Wireless IP camera with cloud storage and app integration.</p>
+                            <div class="specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Connection:</span>
+                                    <span>WiFi 802.11ac</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Storage:</span>
+                                    <span>Cloud + Local</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image solar-camera">
+                            <span class="icon">☀️</span>
+                            <div class="feature-badge">Solar</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Solar Camera</h3>
+                            <p>Eco-friendly solar camera with battery backup for remote locations.</p>
+                            <div class="specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Power:</span>
+                                    <span>Solar + Battery</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Runtime:</span>
+                                    <span>365 days</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image zoom-camera">
+                            <span class="icon">🔍</span>
+                            <div class="feature-badge">36x Zoom</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>High-Zoom PTZ Camera</h3>
+                            <p>Professional PTZ camera with 36x optical zoom capability.</p>
+                            <div class="specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Zoom:</span>
+                                    <span>36x Optical</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Range:</span>
+                                    <span>500m+ visibility</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image dual-camera">
+                            <span class="icon">👁️</span>
+                            <div class="feature-badge">Dual Lens</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Dual Lens Camera</h3>
+                            <p>Advanced dual-lens system with thermal and optical sensors.</p>
+                            <div class="specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Sensors:</span>
+                                    <span>Thermal + Optical</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Detection:</span>
+                                    <span>Day/Night</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image siren-camera">
+                            <span class="icon">🚨</span>
+                            <div class="feature-badge">Audio</div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Siren Camera</h3>
+                            <p>Security camera with built-in siren and strobe light deterrent.</p>
+                            <div class="specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Siren:</span>
+                                    <span>110dB alarm</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Light:</span>
+                                    <span>LED strobe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <div class="footer">
@@ -120,8 +395,11 @@
                     <p style="color: #bdc3c7; margin-bottom: 1.5rem; line-height: 1.6;">
                         Ready to transform your business with cutting-edge technology?
                     </p>
-                    <button class="cta-button" onclick="handleContactClick()">
-                        Contact Us Today
+                    <button class="contact-nav-btn">
+                        <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSfoK6vgeDLR1E3rNieQdl8b1TOaQg3b1KxLlOs0zJr1URg1hQ/viewform?usp=dialog">
+                            Enquiry Form
+                        </a>
                     </button>
                 </div>
             </div>

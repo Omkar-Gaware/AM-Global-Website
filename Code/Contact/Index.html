@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AM Global - Your Trusted Technology Partner</title>
+    <title>Products - AM Global | Your Trusted Technology Partner</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,16 +15,18 @@
                 <a href="../Home/index.html"><img src="../images/AM Global Logo copy.png" alt="AM Global Logo"></a>
             </div>
             <ul class="nav-links">
-                <li><a href="../Products/Index.html">Products</a></li>
+                <!-- <li><a href="../Products/Index.html">Products</a></li> -->
                 <li><a href="../Ai/Index.html">AI</a></li>
                 <li><a href="../Automation/Index.html">Automation</a></li>
                 <li><a href="../Hardware/Index.html">Hardware</a></li>
                 <li><a href="../About/Index.html">About Us</a></li>
                 <li><a href="../Contact/Index.html">Contact Us</a></li>
             </ul>
-            <button class="theme-toggle" onclick="toggleTheme()">
-                <span id="theme-icon">🌙</span>
-                <span id="theme-text">Dark</span>
+            <button class="contact-nav-btn">
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfoK6vgeDLR1E3rNieQdl8b1TOaQg3b1KxLlOs0zJr1URg1hQ/viewform?usp=dialog">
+                    Enquiry Form
+                </a>
             </button>
             <button class="mobile-menu" onclick="toggleMobileMenu()">☰</button>
         </nav>
@@ -35,28 +37,78 @@
         <div class="mobile-menu-content">
             <div class="mobile-menu-header">
                 <div class="logo">
-                    <div class="logo-icon"> <a href="../Home/index.html"><img src="../images/AM Global Logo copy.png"
-                                alt="AM Global Logo"></a>
-                    </div>
-                    
+                    <svg width="30" height="30" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45" fill="currentColor" opacity="0.1" />
+                        <text x="50" y="65" text-anchor="middle" font-size="40" font-weight="bold"
+                            fill="currentColor">AM</text>
+                    </svg>
+                    AM Global
                 </div>
                 <button class="mobile-menu-close" onclick="closeMobileMenu()">✕</button>
             </div>
             <ul class="mobile-nav-links">
-                <li><a href="../Products/Index.html" onclick="closeMobileMenu()">Products</a></li>
+                <!-- <li><a href="../Products/Index.html" onclick="closeMobileMenu()">Products</a></li> -->
                 <li><a href="../Ai/Index.html" onclick="closeMobileMenu()">AI</a></li>
                 <li><a href="../Automation/Index.html" onclick="closeMobileMenu()">Automation</a></li>
                 <li><a href="../Hardware/Index.html" onclick="closeMobileMenu()">Hardware</a></li>
                 <li><a href="../About/Index.html" onclick="closeMobileMenu()">About Us</a></li>
                 <li><a href="../Contact/Index.html" onclick="closeMobileMenu()">Contact Us</a></li>
             </ul>
-            <button class="theme-toggle" onclick="toggleTheme()" style="margin-top: 2rem;">
-                <span id="mobile-theme-icon">🌙</span>
-                <span id="mobile-theme-text">Dark</span>
+            <button class="theme-toggle" onclick="">
+                <span><span><a
+                            style="text-decoration: none; font-size: larger; font-weight: 600; color: rgb(48, 90, 90);"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSfoK6vgeDLR1E3rNieQdl8b1TOaQg3b1KxLlOs0zJr1URg1hQ/viewform?usp=dialog">Contact
+                            US</a></span></span>
             </button>
         </div>
     </div>
 
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>About AM Global</h2>
+                    <p>AM Global helps seize the opportunities of tomorrow by proving that amazing things can happen
+                        when you connect the unconnected. An integral part of our DNA is creating long-lasting customer
+                        partnerships, working together to identify our customers' needs and provide solutions that fuel
+                        their success.</p>
+
+                    <p>AM Global offers a comprehensive portfolio of products in Security, Society Management,
+                        Educational Institute Management, and BlockChain Domains. We are evolving our offerings through
+                        the use of latest AI Technologies.</p>
+
+                    <div class="about-stats">
+                        <div class="stat-item loading">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Delivered</span>
+                        </div>
+                        <div class="stat-item loading">
+                            <span class="stat-number">25+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat-item loading">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item loading">
+                            <span class="stat-number">99%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-visual">
+                    <div class="tech-illustration">
+                        <div style="position: relative; z-index: 2;">
+                            🚀 🤖 💡 ⚡
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <div class="footer">
@@ -120,9 +172,12 @@
                     <p style="color: #bdc3c7; margin-bottom: 1.5rem; line-height: 1.6;">
                         Ready to transform your business with cutting-edge technology?
                     </p>
-                    <button class="cta-button" onclick="handleContactClick()">
-                        Contact Us Today
-                    </button>
+                    <button class="contact-nav-btn">
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfoK6vgeDLR1E3rNieQdl8b1TOaQg3b1KxLlOs0zJr1URg1hQ/viewform?usp=dialog">
+                    Enquiry Form
+                </a>
+            </button>
                 </div>
             </div>
         </div>
