@@ -24,7 +24,7 @@ body {
 
 /* Simplified contact nav button */
 .contact-nav-btn {
-  background: linear-gradient(135deg, #6b7280, #97a5bd);
+  background: linear-gradient(135deg, #6b7280, #f14545);
   border: none;
   border-radius: 50px;
   padding: 0.8rem 2rem;
